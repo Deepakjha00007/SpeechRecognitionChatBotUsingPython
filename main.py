@@ -7,10 +7,7 @@ import time
 import importlib
 importlib.reload(musicLibrary)
 
-# from openai import OpenAI
-# from gtts import gTTS
-# import pygame
-# import os
+
 
 
 recognizer=sr.Recognizer()
@@ -44,18 +41,7 @@ def speak(text):
 
 
 
-# # def aiprocess(command):
-# #     client=OpenAI(api_key="")
 
-# # completion=client.chat.completion.create(
-# #     mode1="gpt-3.5-turbo",
-# #     messages=[
-# #         {"role":"system","content":"you are a virtual assistant named jarvis skilled in general tasks like alexa and gemini"}
-# #         {"role":"user","content":command}
-# #     ]
-# # )
-
-# # print(completion.choices[0].message.content)
 
 
 
@@ -90,12 +76,7 @@ def processcommand(c):
             for article in articles:
                 speak(article['title'])
 
-#     # else:
-#     #     output=aiprocess(c)
-#     #     speak(output)
 
-
-#         #pip install gtts
 
 
 if __name__== "__main__":
